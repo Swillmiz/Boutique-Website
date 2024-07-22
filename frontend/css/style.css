@@ -82,7 +82,7 @@ nav ul li a {
     align-items: center;
     padding: 50px 50px;
     background: linear-gradient(to right, #dbb89084, #716a386b), 
-    url('/assets/Boutique-Wallpaper-1080p.jpg');
+    url('assets/Boutique-Wallpaper-1080p.jpg');
     background-repeat: no-repeat;
     height: 65vh;
     background-position: center;
