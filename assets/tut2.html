@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tracking-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+}
+
+.tracking-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tracking-header button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tracking-header button:hover {
+    background: #0056b3;
+}
+
+.tracking-timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.tracking-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ff4500;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.date, .status {
+    display: block;
+    font-size: 12px;
+    color: #888;
+}
+
+</style>
+<body>
+    <div class="tracking-container">
+        <div class="tracking-header">
+            <button onclick="toggleDetails()">Click to collapse</button>
+        </div>
+        <div class="tracking-timeline" id="timeline">
+            <div class="tracking-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <p>Will be at Jumia Pickup Station Ughelli</p>
+                </div>
+            </div>
+            <div class="tracking-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <p>In transit to Manelsa-NG-Airport</p>
+                </div>
+            </div>
+            <div class="tracking-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <p>Was at Consolidation Hub in Hongkong</p>
+                    <span class="date">09:05, 13/06/2024</span>
+                    <span class="status">Package Received</span>
+                </div>
+            </div>
+            <div class="tracking-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <p>Was at JG-Seko-China</p>
+                    <span class="date">06:02, 11/06/2024</span>
+                    <span class="status">Your package has been fulfilled</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tina's Classics</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet"  href="../plugins/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Tina's Classics</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li class="menu-btn"><i class="fas fa-bars"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have a question about our products or just want to say hello, feel free to reach out.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Tina's Classics</h2>
+                <p>Bringing you the finest women's fashion with elegance and style. Follow us on our social media channels to stay updated with the latest trends and collections.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</i></a>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</i></a>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</i></a>
+                </div>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><p>Email: tinasclassic@gmail.com</p></li>
+                    <li><p>Phone: +234 912 339 0878</p></li>
+                    <li><p>Address: No 4, Tina's avenue, Deta state</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tina's Classics. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--<script src="style.js"></script>-->
+    <script>
+        const menubar = document.getElementById('menu-btn');
+        const menuItem = document.getElementById('menu-item');
+        menubar.addEventListener('click' , ()=>{
+          menuItem.classList.toggle('show');
+        });
+      </script>
+</body>
+</html>

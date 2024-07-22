@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header 
+{
+    background-color: #5b5b5bbb;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header h1 
+{
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul :hover
+{
+    border: 2px #fff solid;
+    border-top: none;
+    border-left: none ;
+    border-right: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container > nav  li:nth-child(4)
+{
+    display: none;
+}
+.menu-bar
+{
+    display: none;
+}
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    animation: fadeIn 2s ease-in;
+}
+
+.product-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    animation: slideInLeft 1s ease-in;
+}
+
+.product-details {
+    max-width: 600px;
+    padding: 20px;
+    animation: slideInRight 1s ease-in;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.price {
+    font-size: 1.5rem;
+    color:  #626161;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color:  #626161;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color:  #ffffff;
+    border:  #626161 solid 1px;
+    color: #626161;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color:  #626161;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-icons a {
+    margin: 0 10px;
+}
+
+.footer-section .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    color: #ccc;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+@media (max-width: 768px) {
+    .header-container {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    .header-container > nav  li:not(:last-child)
+    {
+        display: none;
+    }
+    .header-container > nav  li.menu-btn
+    {
+        display: inline-block;
+    }
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-image img {
+        max-width: 300px;
+    }
+    .header-container > nav > ul >  li.menu-btn
+    {
+        display: inline-block;
+        position: relative;
+
+    }
+     .menu-bar
+    {
+        background-color: white;
+        border-radius: 20px;
+        display: none;
+        flex-direction: column;
+         right: 15px;
+        position: absolute;
+        padding: 10px 0px;
+    }
+    .menu-bar.show
+    {
+       display: flex;
+    }
+    .menu-bar > a 
+    {
+        text-decoration: none;
+        padding: 10px 200px;
+        padding-left: 10px;
+    }
+    .menu-bar > a:hover 
+    {
+        background-color: #f1f1f1;
+    }
+}
